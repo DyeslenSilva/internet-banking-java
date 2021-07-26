@@ -1,5 +1,6 @@
 package br.com.banco.java.model;
 
+import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -17,7 +18,12 @@ public class PessoaJuridica extends Cliente {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private String cnpj;
 	
+	@Column
+	private String nConta;
+	
+	@Column
 	private String endereco;
 	
+	@Column
 	private String telefoneComercial;
 }

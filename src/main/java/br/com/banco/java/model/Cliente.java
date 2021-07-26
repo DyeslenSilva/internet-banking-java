@@ -5,7 +5,6 @@ import lombok.Data;
 @Data
 public class Cliente {
 
-	private int idCliente;
-
-	private String nomeCliente;
+	private String conta;
+	private int agencia;
 }
