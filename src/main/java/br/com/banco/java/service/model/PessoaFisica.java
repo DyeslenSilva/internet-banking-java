@@ -1,4 +1,4 @@
-package br.com.banco.java.model;
+package br.com.banco.java.service.model;
 
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
@@ -11,13 +11,13 @@ import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode(callSuper = false)
-@Table(name = "pessoajuridica")
-public class PessoaJuridica extends Cliente {
+@Table(name = "pessoafisica")
+public class PessoaFisica extends Cliente {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private String cnpj;
-	
+	private String cpf;
+
 	@Column
 	private String nConta;
 	
@@ -25,5 +25,9 @@ public class PessoaJuridica extends Cliente {
 	private String endereco;
 	
 	@Column
-	private String telefoneComercial;
+	private String telefone;
+	
+	@Column
+	private String celular;
+
 }

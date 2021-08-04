@@ -1,0 +1,17 @@
+type Cliente {
+	agencia: String
+	conta: String!
+	
+}
+
+extend type Query {
+	listarTodosOsClientes :[Cliente]
+	listarClientePorConta: [Cliente]
+	listarClientePF: [PessoaFisica]
+	listarClientePJ: [PessoaJuridica]	
+}
+
+extend type Mutation {
+	saveCliente(Cliente: Cliente): void
+	deleteCliente(int: cliente): void
+}
