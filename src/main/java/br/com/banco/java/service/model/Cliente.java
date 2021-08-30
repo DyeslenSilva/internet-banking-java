@@ -15,4 +15,6 @@ public class Cliente {
 	private String conta;
 	@Column
 	private int agencia;
+	
+	private boolean cadastro;
 }
