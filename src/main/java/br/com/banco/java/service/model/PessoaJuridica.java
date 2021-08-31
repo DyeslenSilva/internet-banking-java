@@ -27,4 +27,7 @@ public class PessoaJuridica extends Cliente {
 	
 	@Column
 	private String telefoneComercial;
+	
+	@Column
+	private String nomeFantasia;
 }

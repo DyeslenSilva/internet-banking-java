@@ -29,5 +29,8 @@ public class PessoaFisica extends Cliente {
 	
 	@Column
 	private String celular;
+	
+	@Column
+	private String nome;
 
 }
