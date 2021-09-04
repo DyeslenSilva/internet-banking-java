@@ -17,6 +17,6 @@ import br.com.banco.java.annotations.enumeration.Password;
 public @interface Cartao {
 	DadosCartao[] numeroCartao();
 	DadosCartao[] bandeira();
-	Password[] senha();
+	//Password[] senha();
 	
 }
